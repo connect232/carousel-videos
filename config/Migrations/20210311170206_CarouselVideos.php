@@ -44,6 +44,11 @@ class CarouselVideos extends AbstractMigration
             'default' => null,
             'null' => false,
         ]);
+        $table->addColumn('mobile_image', 'string', [
+            'default' => null,
+            'limit' => 255,
+            'null' => false,
+        ]);
         $table->create();
     }
 }
